@@ -46,7 +46,8 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash[:season].merge({:holiday_name => supply_array})
+  b = {:season => {:holiday_name => supply_array}}
+  holiday_hash[:season][:holiday] = b[:season][:holiday]
   holiday_hash
 end
 
